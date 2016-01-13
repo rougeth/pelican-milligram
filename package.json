@@ -1,0 +1,6 @@
+{
+  "name": "pelican-milligram",
+  "dependencies": {
+    "milligram": "^1.0.3"
+  }
+}

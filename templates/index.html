@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="container">
+  <header>
+    <ul>
+      <li><a href="#" class="title">rgth.co</a></li>
+      {% for page in pages %}
+      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </header>
+</div>
+{% endblock header %}
+
+{% block content %}
+{% for article in articles %}
+YEAH!
+{% else %}
+nothing yet!
+{% endfor %}
+{% endblock content %}

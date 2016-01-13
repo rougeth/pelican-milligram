@@ -1,0 +1,36 @@
+body {
+  font-family: Hack, monospace;
+  margin: 0;
+}
+
+header {
+  color: #999;
+  font-size: 20px;
+  padding: 15px 0;
+}
+
+header ul { list-style: none; margin: 0; }
+header ul li { display: inline; }
+
+header .title { color: #0275d8; }
+
+header a {
+  color: #999;
+  text-transform: lowercase;
+}
+
+header span {
+  color: #e0e0e0;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.container {
+  max-width: 700px;
+}
+
+.notfound {
+  margin: 0 auto;
+  text-align: center;
+}
+
