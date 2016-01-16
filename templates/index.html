@@ -1,22 +1,15 @@
 {% extends 'base.html' %}
 
-{% block header %}
-<div class="container">
-  <header>
-    <ul>
-      <li><a href="#" class="title">rgth.co</a></li>
-      {% for page in pages %}
-      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </header>
-</div>
-{% endblock header %}
-
 {% block content %}
-{% for article in articles %}
-YEAH!
-{% else %}
-nothing yet!
-{% endfor %}
+  <div class="archive">
+  {% for article in articles %}
+  <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
+  <time datetime="{{ article.date.isoformat() }}">
+    {{ article.locale_date }}
+  </time>
+  <hr>
+  {% else %}
+  nothing yet!
+  {% endfor %}
+</div>
 {% endblock content %}

@@ -1,11 +1,15 @@
 body {
+  color: #323232;
   font-family: Hack, monospace;
   margin: 0;
 }
 
+h1 { color: black; }
+
 header {
   color: #999;
   font-size: 20px;
+  margin-bottom: 30px;
   padding: 15px 0;
 }
 
@@ -13,11 +17,15 @@ header ul { list-style: none; margin: 0; }
 header ul li { display: inline; }
 
 header .title { color: #0275d8; }
+header .title:hover { color: #0467bd; }
 
-header a {
+header a,
+header a:hover {
   color: #999;
-  text-transform: lowercase;
 }
+
+header h2 a,
+header h2 a:hover{ color: black; }
 
 header span {
   color: #e0e0e0;
@@ -29,8 +37,26 @@ header span {
   max-width: 700px;
 }
 
+.archive h4 { margin: 0; }
+.archive h4 a { color: black; }
+.archive time {
+  color: #7d7d7d;
+  font-size: 14px;
+}
+
 .notfound {
   margin: 0 auto;
   text-align: center;
 }
 
+.article header { margin-bottom: 20px; }
+.article header h2,
+.article header h4,
+.article header h4 p {
+  margin-bottom: 0;
+}
+.article header h4 { font-size: 2.6rem; }
+.article header time {
+  font-size: 14px;
+  text-transform: lowercase;
+}

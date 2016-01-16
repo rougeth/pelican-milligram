@@ -10,8 +10,16 @@
     <link rel="stylesheet" href="/theme/style.css">
 </head>
 <body>
-  {% block header %}
-  {% endblock header %}
+  <div class="container">
+    <header>
+      <ul>
+        <li><a href="/" class="title">rgth.co</a></li>
+        {% for page in pages %}
+        <li><a href="/{{ page.url }}">{{ page.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </header>
+  </div>
 
   <div class="container">
   {% block content %}
