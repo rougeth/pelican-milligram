@@ -13,22 +13,20 @@
 {% endblock %}
 
 {% block content %}
-<section class="article">
-  <header id="title">
-    <h2>
-      <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-         title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
-    <h4>{{ article.summary }}</h4>
-    <time class="published" datetime="{{ article.date.isoformat() }}">
-      {{ article.locale_date }}
-    </time>
-  </header>
-  <div class="entry-content">
+<section id="article" class="article">
+  <time class="published" datetime="{{ article.date.isoformat() }}">
+    {{ article.locale_date }}
+  </time>
+  <h2>
+    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+       title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+  <h4>{{ article.summary }}</h4>
+  <div class="content">
     {{ article.content }}
   </div>
   Share:
   <a class="twitter-share-button"
-     href="https://twitter.com/intent/tweet?text=Hello%20world">Twitter</a>
+      href="https://twitter.com/intent/tweet?text={{ article.title}} by @marcorougeth - https://rgth.co/{{ article.url }}">Twitter</a>
   <div id="disqus_thread"></div>
   <script>
       /**
