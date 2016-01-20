@@ -3,7 +3,7 @@
 {% block content %}
   <div class="archive">
   {% for article in articles %}
-  <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
+  <h4><a href="{{ article.url }}#title">{{ article.title }}</a></h4>
   <time datetime="{{ article.date.isoformat() }}">
     {{ article.locale_date }}
   </time>

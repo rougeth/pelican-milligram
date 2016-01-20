@@ -1,6 +1,6 @@
 body {
   color: #323232;
-  font-family: Hack, monospace;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
@@ -16,7 +16,10 @@ header {
 header ul { list-style: none; margin: 0; }
 header ul li { display: inline; }
 
-header .title { color: #0275d8; }
+header .title {
+  color: #0275d8;
+  font-family: Hack, monospace;
+}
 header .title:hover { color: #0467bd; }
 
 header a,
@@ -25,10 +28,13 @@ header a:hover {
 }
 
 header h2 a,
-header h2 a:hover{ color: black; }
+header h2 a:hover {
+  color: black;
+  font-weight: 400;
+}
 
 header span {
-  color: #e0e0e0;
+  color: rgba(0, 0, 0, 0.44);
   font-family: monospace;
   font-size: 15px;
 }
@@ -37,10 +43,12 @@ header span {
   max-width: 700px;
 }
 
-.archive h4 { margin: 0; }
+.archive h4 {
+  margin: 0;
+}
 .archive h4 a { color: black; }
 .archive time {
-  color: #7d7d7d;
+  color: rgba(0, 0, 0, 0.44);
   font-size: 14px;
 }
 
@@ -55,8 +63,14 @@ header span {
 .article header h4 p {
   margin-bottom: 0;
 }
-.article header h4 { font-size: 2.6rem; }
+
+.article header h4 {
+  color: rgba(0, 0, 0, 0.44);
+  font-size: 2.6rem;
+}
+
 .article header time {
+  color: rgba(0, 0, 0, 0.44);
   font-size: 14px;
   text-transform: lowercase;
 }
