@@ -27,6 +27,14 @@ header ul li a {
   text-transform: uppercase;
 }
 
+
 .archive h3 { margin: 0; }
 .archive time { font-size: 1.5rem; }
 .archive hr { margin: 20px 0; }
+
+.license {
+  color: #aaa;
+  margin-top: 40px;
+  max-width: 500px;
+  text-transform: uppercase;
+}
