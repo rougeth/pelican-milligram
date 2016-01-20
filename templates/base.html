@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>rgth</title>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
 
@@ -14,22 +13,17 @@
 </head>
 <body>
   <div class="container">
-    <header>
-      <ul>
-        <li><a href="/" class="title">rgth.co</a></li>
-        {% for page in pages %}
-        <li><a href="/{{ page.url }}#page">{{ page.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </header>
+      <header>
+        <a href="/" class="blog">Marco<strong>Rougeth</strong></a>
+        <ul>
+          <li><a href="#">open source</a></li>
+          <li><a href="#">about</a></li>
+        </ul>
+      </header>
+
+    {% block content %}
+    {% endblock content %}
+
   </div>
-
-  <div class="container">
-  {% block content %}
-  {% endblock content %}
-  </div>
-
-  <script src="/theme/cursor.js"></script>
-
 </body>
 </html>
