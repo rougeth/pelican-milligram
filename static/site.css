@@ -1,3 +1,4 @@
+/* common */
 body {
   color: #111;
   font-family: 'Roboto', sans-serif;
@@ -27,10 +28,7 @@ header ul li a {
   text-transform: uppercase;
 }
 
-
-.archive h3 { margin: 0; }
-.archive time { font-size: 1.5rem; }
-.archive hr { margin: 20px 0; }
+time { font-size: 1.5rem; }
 
 .license {
   color: #aaa;
@@ -38,3 +36,14 @@ header ul li a {
   max-width: 500px;
   text-transform: uppercase;
 }
+
+/* home */
+.archive h3 { margin: 0; }
+.archive hr { margin: 20px 0; }
+
+/* article */
+.article h2 { margin: 10px 0 0 0; }
+.article h4 { margin-bottom: 25px; }
+.article h4 p { margin-bottom: 0; }
+.article time { color: #aaa; }
+.article #disqus_thread { margin-top: 25px; }
